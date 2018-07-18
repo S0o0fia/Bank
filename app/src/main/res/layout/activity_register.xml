@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/login"
+    tools:context="com.example.safaanabil.bank.Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+
+   <!-- <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+       android:onClick="changeimg"
+        android:id="@+id/img"
+
+
+        />-->
+    <!-- First name-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id = "@+id/fname"
+
+        />
+
+
+   <!-- Last Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id = "@+id/lname"
+
+        />
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id = "@+id/email"
+
+        />
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+
+                />
+
+    <!-- Account Number -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id = "@+id/acnum"
+
+
+        />
+
+
+     <!-- Identity Number -->
+     <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Identity Number"
+         android:textSize="16sp"
+         android:textStyle="bold"
+            />
+
+  <EditText
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:inputType="number"
+   android:id = "@+id/idnum"
+   />
+
+
+   <!-- Phone Number -->
+   <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+       android:textSize="16sp"
+       android:textStyle="bold"
+   android:text="Phone" />
+
+   <EditText
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:inputType="phone"
+   android:id = "@+id/num" />
+
+   <!-- Adsress  -->
+   <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+       android:textSize="16sp"
+       android:textStyle="bold"
+   android:text="Address" />
+
+   <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:id = "@+id/address"
+     />
+
+     <!-- Birth Day -->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+    android:text="Birth Day"
+    />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="date"
+    android:id = "@+id/bdate"/>
+
+    <!-- Account Type -->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+    android:text="Account Type"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+    android:text="Save"
+    android:id="@+id/save"
+    />
+    <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+    android:text = "Current"
+    android:id="@+id/cuurent"
+    />
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text = "Sign up"
+    android:id="@+id/register"
+   android:background="@drawable/circle"
+    android:onClick="register"
+    android:layout_gravity="center_horizontal"
+     />
+      </LinearLayout>
+    </ScrollView>
+</FrameLayout>

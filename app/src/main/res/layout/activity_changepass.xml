@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/profile3"
+
+tools:context="com.example.safaanabil.bank.Profile">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="41dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <!-- Last name-->
+        <!-- Last name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Current Password"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+             android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:id = "@+id/oldpass"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:layout_margin="5dp"
+
+        android:orientation="vertical">
+
+        <!-- Last name-->
+        <!-- Last name-->
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="New Password "
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:id = "@+id/newpass"
+
+            />
+
+    </LinearLayout>
+
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Save"
+        android:id="@+id/savepass"
+        android:textSize="18dp"
+        android:onClick="savepass"
+        android:layout_below="@id/l7"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savepass"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:onClick="cancelpass"
+        android:text="cancel"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+   </RelativeLayout>
+
+</RelativeLayout>
